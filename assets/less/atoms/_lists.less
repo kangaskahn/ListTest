@@ -1,0 +1,23 @@
+/*==================================
+=            ATOM LISTS            =
+==================================*/
+
+.card-list{
+	margin: 0px 0; 
+	list-style: none;
+	padding: 10px 0 10px 20px;
+	border-bottom: @border-settings;
+
+	&:first-child {
+		border-top: @border-settings;
+	}
+
+	&.error {
+		background: @light-red;
+	}
+
+	&.done {
+		background: @light-green;
+	}
+}
+

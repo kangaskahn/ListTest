@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+/*==============================
+=            STYLES            =
+==============================*/
+/* Fonts */
+/*=================================
+=            VARIABLES            =
+=================================*/
+/* Colors */
+/* Layout */
+/* Setteings */
+/*==============================
+=            LAYOUT            =
+==============================*/
+body {
+  background-color: #f0f5f0;
+}
+.wrapper {
+  margin: 20px auto;
+  width: 60%;
+}
+.list-wrapper {
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 10px 0;
+}
+.list-wrapper ul {
+  padding: 0;
+}
+.list-wrapper ul li {
+  margin: 0px 0;
+  list-style: none;
+  padding: 10px 0 10px 20px;
+  border-bottom: solid 1px #eeeeff;
+}
+.list-wrapper ul li:first-child {
+  border-top: solid 1px #eeeeff;
+}
+.list-wrapper ul li.error {
+  background: #ffc5c5;
+}
+.list-wrapper ul li.done {
+  background: #dbf5df;
+}
+/*==================================
+=            RESPONSIVE            =
+==================================*/
+/*===================================
+=            TYPE STYLES            =
+===================================*/
+body {
+  font-family: Roboto, arial;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+/*=============================
+=            ATOMS            =
+=============================*/
+/*================================
+=            BOX ATOM            =
+================================*/
+.box {
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+}
+/*==================================
+=            ATOM LISTS            =
+==================================*/
+.card-list {
+  margin: 0px 0;
+  list-style: none;
+  padding: 10px 0 10px 20px;
+  border-bottom: solid 1px #eeeeff;
+}
+.card-list:first-child {
+  border-top: solid 1px #eeeeff;
+}
+.card-list.error {
+  background: #ffc5c5;
+}
+.card-list.done {
+  background: #dbf5df;
+}
+/*# sourceMappingURL=styles.css.map */
