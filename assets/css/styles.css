@@ -44,6 +44,41 @@ body {
 .list-wrapper ul li.done {
   background: #dbf5df;
 }
+.list-wrapper button {
+  -webkit-animation-duration: .0001s;
+  animation-duration: .0001s;
+  -webkit-animation-name: mui-node-inserted;
+  animation-name: mui-node-inserted;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: 36px;
+  padding: 0 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.list-wrapper button:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
 /*==================================
 =            RESPONSIVE            =
 ==================================*/
@@ -88,5 +123,71 @@ h5 {
 }
 .card-list.done {
   background: #dbf5df;
+}
+.item-status .fa-bug {
+  font-size: 14px;
+}
+.item-status .fa-stack {
+  margin-left: -40px;
+  margin-right: 10px;
+}
+.tasks li .fa-bug {
+  font-size: 14px;
+}
+.tasks li .fa-stack {
+  margin-left: -40px;
+  margin-right: 10px;
+}
+.tasks li .fa-pencil-square-o {
+  font-size: 14px;
+}
+.bug .fa-circle {
+  color: #7575bb;
+}
+/*=====================================
+=            BUTTON STYLES            =
+=====================================*/
+.button {
+  -webkit-animation-duration: .0001s;
+  animation-duration: .0001s;
+  -webkit-animation-name: mui-node-inserted;
+  animation-name: mui-node-inserted;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: 36px;
+  padding: 0 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.button:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+.primary {
+  color: #FFF;
+  background-color: #2196F3;
+}
+.success {
+  color: #FFF;
+  background-color: #0DD23D;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */
