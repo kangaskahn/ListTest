@@ -2,13 +2,112 @@
 =            LAYOUT            =
 ==============================*/
 
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	background-color: @background-color;
 }
 
+header {
+	height: 50px;
+	background-color: #274954;
+	
+	section {
+		display: inline-block;
+	}
+
+	section.logo {
+		h2 { 
+			margin: 0;
+			padding: 20% 0 0 0;
+			text-align: center;
+			color: #fff; 
+		}
+		height: 50px;
+		width: 50px;
+		background: #1A3139;
+	}
+
+	section.logo-text {
+		padding-left: 10px;
+		height: 50px;
+		width: 80%;
+		margin: 0;
+		font-size: 16px;
+		color: #F3F3F3;
+		text-transform: uppercase;
+		letter-spacing: .6em;
+		span {
+			position: relative;
+			top: -2px;
+			text-shadow: 2px 2px 2px #000000;
+		}
+	}
+
+	section.controls {
+		height: 50px;
+		a { 
+			color: @nav-link-color;
+			width: 50px;
+			height: 50px;
+
+			&:hover { color: @nav-link-hover-color; }
+		}
+	}
+} /* end header */
+
+.left-controls {
+	width: 50px;
+	float: left;
+	height: 100%;
+	background-color: #3B5D7D;
+
+	ul{
+	    width: 100%;
+	    margin: 0;
+	    padding: 0 0 0 0px;
+	    text-align: center;
+	    overflow: hidden;
+	    list-style: none;
+	  
+	}
+
+	li{
+	    width: 100%;
+	    padding-top: 50%;
+	}
+	li.active a:after {
+		position: absolute;
+		overflow: hidden;
+		content: '';
+		width: 0;
+		height: 0;
+		margin-left: 8px;
+		border-style: solid;
+		border-width: 7.5px 10px 7.5px 0;
+		border-color: transparent @background-color transparent transparent;
+	}
+
+	a{
+	    display: block;
+	    color: @nav-link-color;
+
+	    &:hover {
+	    	color: @nav-link-hover-color;
+	    }
+	}
+}
+
 .wrapper {
-	margin: 20px auto;
+	//margin: 0px auto;
+	padding-left: 30px;
 	width: 60%;
+	float: left;
 }
 
 .list-wrapper {
